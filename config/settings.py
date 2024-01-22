@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "core",
-    "users",
+    "apps.core",
+    "apps.users",
+    # "apps.main.mentors"  # This app is in .gitignore
 ]
 
 AUTH_USER_MODEL = "users.User"
