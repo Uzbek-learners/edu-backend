@@ -28,4 +28,4 @@ class User(BaseModel, AbstractBaseUser, PermissionsMixin):
         return full_name.strip()
 
     class Meta:
-        db_table = "user"
+        db_table = "users"
