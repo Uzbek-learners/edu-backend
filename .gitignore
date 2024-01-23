@@ -132,3 +132,4 @@ files
 .coveragerc
 coverage_test.sh
 /htmlcov
+/apps/main/
