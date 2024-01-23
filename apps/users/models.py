@@ -9,7 +9,9 @@ class User(BaseModel, AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255, null=True, blank=True)
     phone_number = models.CharField(max_length=50)
-    age = models.IntegerField()
+    age = models.PositiveIntegerField(
+        validators=[MinValueValidator(5), MaxValueValidator(116)]
+    )
 
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
